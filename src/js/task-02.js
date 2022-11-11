@@ -15,8 +15,9 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const body = document.querySelector('#ingredients');
+
 const options = ingredients.map((option) => {
-  const body = document.querySelector('#ingredients');
   const link = document.createElement('li');
   link.classList.add('item');
   link.textContent = option;
