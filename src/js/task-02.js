@@ -15,11 +15,25 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const body = document.querySelector('#ingredients');
+//
+const addClass = document.querySelector('#ingredients');
 
 const options = ingredients.map((option) => {
   const link = document.createElement('li');
   link.classList.add('item');
   link.textContent = option;
-  body.appendChild(link);
+  addClass.appendChild(link);
 });
+
+//
+
+//
+// const body = document.querySelector('#ingredients');
+
+// const options = ingredients.map((option) => {
+//   const link = document.createElement('li');
+//   link.classList.add('item');
+//   link.textContent = option;
+//   // body.appendChild(link);
+// });
+//
