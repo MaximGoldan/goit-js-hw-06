@@ -17,23 +17,11 @@ const ingredients = [
 ];
 //
 const addClass = document.querySelector('#ingredients');
-
+let liArray = [];
 const options = ingredients.map((option) => {
-  const link = document.createElement('li');
-  link.classList.add('item');
-  link.textContent = option;
-  addClass.appendChild(link);
+  const linkItem = document.createElement('li');
+  linkItem.classList.add('item');
+  linkItem.textContent = option;
+  liArray.push(linkItem);
 });
-
-//
-
-//
-// const body = document.querySelector('#ingredients');
-
-// const options = ingredients.map((option) => {
-//   const link = document.createElement('li');
-//   link.classList.add('item');
-//   link.textContent = option;
-//   // body.appendChild(link);
-// });
-//
+addClass.append(...liArray);
