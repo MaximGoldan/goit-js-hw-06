@@ -17,11 +17,12 @@ const ingredients = [
 ];
 //
 const addClass = document.querySelector('#ingredients');
-let liArray = [];
+
 const options = ingredients.map((option) => {
   const linkItem = document.createElement('li');
   linkItem.classList.add('item');
   linkItem.textContent = option;
-  liArray.push(linkItem);
+
+  return linkItem;
 });
-addClass.append(...liArray);
+addClass.append(...options);
